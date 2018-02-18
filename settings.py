@@ -21,12 +21,27 @@ along with FSN Flight Data Service.  If not, see <http://www.gnu.org/licenses/>.
 import os
 
 DOMAIN = {
+    'transponders': {
+        'item-title': 'transponder',
+        'resource_methods': ['POST'],
+        'item_methods': ['DELETE'],
+        'schema': {}
+    },
     'position-reports': {
         'item_title': 'position-report',
         'resource_methods': ['GET', 'POST', 'DELETE'],
         'item_methods': ['GET', 'PUT', 'PATCH', 'DELETE'],
         'allow_unknown': True,
-        'schema': {}
+        'schema': {
+            'transponder': {
+                'type': 'objectid',
+                'required': True,
+                'data_relation': {
+                    'resource': 'transponders',
+                    'field': '_id'
+                }
+            }
+        }
     }
 }
 
