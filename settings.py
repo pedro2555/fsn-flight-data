@@ -70,5 +70,8 @@ MONGO_PASSWORD = os.environ.get('MONGO_PASSWORD', '')
 MONGO_DBNAME = os.environ.get('MONGO_DBNAME', 'fsn-flight-data')
 
 #X_DOMAINS = ('http://localhost:8081', 'http://127.0.0.1:8081')
-X_DOMAINS = '*'
+X_DOMAINS_RE = [
+    '^http://localhost:.+$',
+    '^http://127.0.0.1:.+$',
+    '^https://fsn-app.herokuapp.co(.+)$']
 X_HEADERS = ['Authorization', 'Content-type']
