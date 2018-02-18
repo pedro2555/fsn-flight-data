@@ -69,5 +69,6 @@ MONGO_USERNAME = os.environ.get('MONGO_USERNAME', '')
 MONGO_PASSWORD = os.environ.get('MONGO_PASSWORD', '')
 MONGO_DBNAME = os.environ.get('MONGO_DBNAME', 'fsn-flight-data')
 
-X_DOMAINS = ('http://localhost:8081', 'http://127.0.0.1:8081')
+#X_DOMAINS = ('http://localhost:8081', 'http://127.0.0.1:8081')
+X_DOMAINS = '*'
 X_HEADERS = ['Authorization', 'Content-type']
