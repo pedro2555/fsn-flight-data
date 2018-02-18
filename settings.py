@@ -54,7 +54,7 @@ DOMAIN = {
                 'type': 'integer'
             },
             'groundspeed': {
-                'type': 'interger'
+                'type': 'integer'
             },
 
         }
