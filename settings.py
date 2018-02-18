@@ -40,7 +40,23 @@ DOMAIN = {
                     'resource': 'transponders',
                     'field': '_id'
                 }
-            }
+            },
+            'position': {
+                'type': 'point'
+            },
+            'timestamp': {
+                'type': 'datetime'
+            },
+            'compass': {
+                'type': 'integer'
+            },
+            'altitude': {
+                'type': 'integer'
+            },
+            'groundspeed': {
+                'type': 'interger'
+            },
+
         }
     }
 }
