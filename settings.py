@@ -20,6 +20,7 @@ along with FSN Flight Data Service.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
 
+PAGINATION_LIMIT = 100
 PAGINATION_DEFAULT = 100
 
 DOMAIN = {
