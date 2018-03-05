@@ -76,5 +76,6 @@ MONGO_DBNAME = os.environ.get('MONGO_DBNAME', 'fsn-flight-data')
 X_DOMAINS_RE = [
     '^http://localhost:.+$',
     '^http://127.0.0.1:.+$',
-    '^https://fsn-app.herokuapp.co(.+)$']
+    '^https://fsn-app.herokuapp.co(.+)$',
+    '^https://pedro2555.github.io(.+)$']
 X_HEADERS = ['Authorization', 'Content-type']
